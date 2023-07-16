@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caprasimo&family=Montserrat:wght@600&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+/* shard classes for common style */
+.button-primary{
+    font-size: 1.25rem;
+    color: #FFF;
+    background-color: #ff900E;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.section-title{
+    color:  #131313;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.light-gray-text{
+    color: #727272;
+    margin: 20px 0;
+}
+
+/* header style */
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 30px 200px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    margin-right: 30px;
+    font-weight: 500px;
+    font-size: 0.8rem;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+}
+.banner{
+    text-align: center;
+}
+.banner h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner img{
+    width: 100%;
+}
+
+/* teams style */
+.team-section{
+    margin: 50px 80px;
+    display: flex;
+    align-items: center;
+}
+.team-imges{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.team-discription{
+    padding: 0 30px 0 50px;
+}
+.quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.feature-text{
+    color: #FF900E;
+}
+.features-section{
+    display: flex;
+    margin: 20px 80px;
+}
+.feature-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 12px;
+}
+.card{
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-img{
+    margin-left: 40px;
+}
+.feature-img img{
+    height: 80%;
+    width: 100%;
+    padding-left: 50px;
+}
+.tan-years-exp{
+    border-radius: 8px;
+    background: #FF900E;
+    text-align: center;
+    color: #FFF;
+    width: 300px;
+    padding: 20px 0;
+    position: relative;
+    bottom: 8%;
+}
+.tan-years{
+    font-size: 65px;
+    font-weight: 700;
+}
+.exp{
+    font-size: 25px;
+    font-weight: 500;
+}
+.fact-section{
+    margin: 1% 4%;
+}
+.fact-cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.fact-card{
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+.number-of-card-use{
+    color: #424242;
+    font-size: 45px;
+    font-weight: 600;
+}
+.fact-card-title{
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sponspors-section{
+    text-align: center;
+    margin: 1% 4%;
+}
+.sponspors{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.sponspors img{
+    width: 140px;
+    margin-bottom: 13px;
+}
+footer{
+    border-radius: 8px;
+    background: #FFF4E7;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 80px 4% 20px 4%;
+}
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav,.team-section,.features-section,.fact-cards,.sponspors{
+        flex-direction: column;
+    }
+    .team-imges{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .team-discription{
+        padding: 50px 0;
+        gap: 0px;
+    }
+    .features-section{
+        margin: 0 10px;
+        gap: none;
+    }
+    .feature-img{
+        margin-left: 0px;
+    }
+    .feature-img img{
+        width: 100%;
+        padding: 30px 0px;
+    }
+    .tan-years-exp{
+        position: static;
+    }
+    .fact-section{
+        margin: 50px 13px;
+    }
+    .fact-card{
+        margin: 2% 20%;
+    }
+    .sponspors{
+        align-items: center;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 50px;
+    }
+    nav,.team-section,.features-section{
+        flex-direction: column;
+    }
+    .team-discription{
+        padding: 50px 0;
+    }
+    .features-section{
+        margin: 0 10px;
+        gap: none;
+    }
+    .feature-img{
+        margin-left: 0px;
+    }
+    .feature-img img{
+        width: 100%;
+        padding: 30px 0px;
+    }
+    .tan-years-exp{
+        position: static;
+    }
+    .fact-section{
+        margin: 50px 15px;
+    }
+    .sponspors img{
+        width: 130px;
+    }
+}
